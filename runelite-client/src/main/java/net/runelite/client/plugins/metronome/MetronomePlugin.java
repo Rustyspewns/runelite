@@ -57,6 +57,11 @@ public class MetronomePlugin extends Plugin
 	{
 		return configManager.getConfig(MetronomePluginConfiguration.class);
 	}
+	@Override
+	protected void startUp()
+	{
+		tickCounter = 0;
+	}
 
 	@Override
 	protected void shutDown()
